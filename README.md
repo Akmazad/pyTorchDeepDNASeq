@@ -5,6 +5,8 @@ This is a PyTorch version of [Akmazad/DeepDNAseq](https://github.com/Akmazad/Dee
 
 ## Usage
 
+To run on my personal computer:
+
 1. SSH into cameronstewart.xyz .
 2. Clone the repository.
 3. Type the following to run:
@@ -12,7 +14,16 @@ This is a PyTorch version of [Akmazad/DeepDNAseq](https://github.com/Akmazad/Dee
    $ python3 main.py
    ```
 
-I will test PyTorch on Raijin shortly.
+To run on Raijin:
+
+1. SSH into raijin.nci.org.au .
+2. Clone the repository.
+3. Type the following to submit the job:
+   ```bash
+   $ qsub raijinJob.pbs
+   ```
+
+Take note from the job script that modules "python3/3.6.2" and "pytorch" must first be loaded.
 
 ## PyTorch vs TensorFlow vs Keras
 
